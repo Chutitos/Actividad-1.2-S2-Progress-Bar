@@ -25,4 +25,14 @@
         android:layout_gravity="center"
         android:numStars="5"
         android:rating="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="30dp"
+        android:text="Volver"
+        android:backgroundTint="@color/black"
+
+        />
 </LinearLayout>
