@@ -24,7 +24,7 @@ public class RatingBarEjemplo extends AppCompatActivity {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
                 txt.setText(v + "Estrellas");
-                Toast.makeText(MainActivity.this, "El rating ha cambiado", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RatingBarEjemplo.this, "El rating ha cambiado", Toast.LENGTH_SHORT).show();
             }
         });
     }
