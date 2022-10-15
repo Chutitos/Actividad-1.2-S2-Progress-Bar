@@ -9,6 +9,7 @@
     android:padding="16dp"
     tools:context=".Actividad_ProgressBar">
 
+    <!-- Título -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
@@ -24,6 +25,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.339" />
 
+    <!-- Progressbar -->
     <ProgressBar
         android:id="@+id/barraProgreso"
         android:layout_width="match_parent"
@@ -35,6 +37,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
+            <!-- Botón para avanzar el progreso -->
             <Button
                 android:id="@+id/comenzarProgreso"
                 android:layout_width="wrap_content"
@@ -43,7 +46,7 @@
                 android:layout_marginRight="20dp"
                 android:text="Comenzar Progreso"
                 android:textAllCaps="false" />
-
+            <!-- Botón para reiniciar el progreso -->
             <Button
                 android:id="@+id/reiniciarProgreso"
                 android:layout_width="wrap_content"
@@ -53,6 +56,8 @@
                 android:textAllCaps="false"
             />
         </LinearLayout>
+
+    <!-- botón para volver -->
     <Button
         android:id="@+id/volverMain"
         android:layout_width="wrap_content"

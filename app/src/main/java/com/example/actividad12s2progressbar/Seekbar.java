@@ -14,6 +14,7 @@ import org.w3c.dom.Text;
 
 public class Seekbar extends AppCompatActivity {
 
+    //Declaración de variables
     SeekBar seekbar;
     TextView txt;
     Button volver;
@@ -24,10 +25,12 @@ public class Seekbar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seekbar);
 
+        //Asocial las variables con las de XML
         seekbar = (SeekBar) findViewById(R.id.skBar1);
         txt = (TextView) findViewById(R.id.txt1);
         volver=findViewById(R.id.volverMain);
 
+        //Botón de volver
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,6 +39,9 @@ public class Seekbar extends AppCompatActivity {
             }
         });
 
+        //Declaración del listener para la seekbar, este se activa cada vez que la selección cambia
+        //En este caso entra a un switch con el int i (Número seleccionado) y dependiendo del
+        //número cambia el texto y el color
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {

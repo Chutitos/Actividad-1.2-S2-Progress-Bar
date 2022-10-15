@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Actividad12S2PROGRESSBAR"
         tools:targetApi="31">
         <activity
-            android:name=".RatingBar"
+            android:name=".RatingBarEjemplo"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

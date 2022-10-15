@@ -6,6 +6,7 @@
     android:orientation="vertical"
     tools:context=".Seekbar">
 
+    <!-- Texto que indica el color seleccionado -->
     <TextView
         android:id="@+id/txt1"
         android:layout_width="wrap_content"
@@ -17,6 +18,8 @@
         android:textColor="@color/black"
         />
 
+    <!-- Seekbar, el atributo max indica cuantas selecciones tiene la barra, progress
+         es la selección por defecto al cargar la actividad-->
     <SeekBar
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -27,6 +30,7 @@
 
         />
 
+    <!-- Botón para volver -->
     <Button
         android:id="@+id/volverMain"
         android:layout_width="wrap_content"

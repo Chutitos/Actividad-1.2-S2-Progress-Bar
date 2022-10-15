@@ -6,6 +6,7 @@
     android:orientation="vertical"
     tools:context=".RatingBarEjemplo">
 
+    <!-- Texto que indica cuantas estrellas están seleccionadas -->
     <TextView
         android:id="@+id/txt1"
         android:layout_width="wrap_content"
@@ -17,19 +18,25 @@
         android:textColor="@color/black"
         />
 
+    <!-- Rating bar, numstars declara de cuantas estrellas es la barra, rating es
+         cuantas estrellas están seleccionadas al cargar la actividad-->
     <RatingBar
+
         android:id="@+id/rtBar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:numStars="5"
-        android:rating="0" />
+        android:rating="0"
+        android:contentDescription="Rating"
+        />
 
+    <!-- Botón para volver -->
     <Button
         android:id="@+id/volverMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|bottom"
+        android:layout_gravity="center"
         android:layout_margin="30dp"
         android:text="Volver"
         android:backgroundTint="@color/black"

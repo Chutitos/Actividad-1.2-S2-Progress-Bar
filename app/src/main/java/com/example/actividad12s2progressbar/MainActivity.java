@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Declaración de botones
     Button progress;
     Button seek;
     Button rating;
@@ -18,10 +19,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        progress=findViewById(R.id.btnProgress);
-        seek=findViewById(R.id.btnSeek);
-        rating=findViewById(R.id.btnRating);
+        //Asociar los botones declarados con los que se encuentran en el XML
+        progress=(Button)findViewById(R.id.btnProgress);
+        seek=(Button)findViewById(R.id.btnSeek);
+        rating=(Button) findViewById(R.id.btnRating);
 
+        //A cada botón se le da un Listener y cuando se hace click se inicia otra actividad
         progress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
